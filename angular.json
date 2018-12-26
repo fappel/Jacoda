@@ -24,7 +24,12 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./jvm",
+                "output": "./assets/jvm"
+              }
             ],
             "styles": [
               "src/styles.sass"
@@ -88,7 +93,12 @@
             "scripts": [],
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./jvm",
+                "output": "./assets/jvm"
+              }
             ]
           }
         },

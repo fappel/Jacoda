@@ -1,0 +1,6 @@
+<div class="content-container" fxLayout="column" fxLayoutAlign="stretch" fxFlex="auto">
+    <div *ngIf="show" class="ace-editor" fxFlex="auto" [ace]="config" [disabled]="disabled"
+        (blur)="onEditorBlur($event)" (focus)="onEditorFocus($event)" (change)="onContentChange($event)"
+        (selectionChange)="onSelectionChange($event)">{{content}}
+    </div>
+</div>

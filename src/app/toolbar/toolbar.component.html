@@ -1,0 +1,3 @@
+<div *ngFor="let action of actions" fxLayout="column" fxLayoutAlign="stretch" fxFlex="auto"> 
+  <button (click)="triggerAction(action.id)">{{action.id}}</button>
+</div>
